@@ -13,25 +13,25 @@ import ComposableArchitecture
 struct TCAPracticeAppApp: App {
     var body: some Scene {
         WindowGroup {
-//            TabView {
-//                           UsersView(
-//                               store: Store(
-//                                   initialState: UsersFeature.State(),
-//                                   reducer: { UsersFeature() }
-//                               )
-//                           )
-//                           .tabItem { Label("Users", systemImage: "person.3") }
-//                           
-                           PostsView(
-                               store: Store(
-                                   initialState: PostsFeature.State(),
-                                   reducer: { PostsFeature()
-                                       
-                                   }
-                               ))
-//                           )
-//                           .tabItem { Label("Posts", systemImage: "doc.text") }
-//                       }
+            //            TabView {
+            //                           UsersView(
+            //                               store: Store(
+            //                                   initialState: UsersFeature.State(),
+            //                                   reducer: { UsersFeature() }
+            //                               )
+            //                           )
+            //                           .tabItem { Label("Users", systemImage: "person.3") }
+            //
+            PostsView(
+                store: Store(
+                    initialState: PostsFeature.State(),
+                    reducer: { PostsFeature()
+                        
+                    }
+                ))
+            //                           )
+            //                           .tabItem { Label("Posts", systemImage: "doc.text") }
+            //                       }
         }
     }
 }
